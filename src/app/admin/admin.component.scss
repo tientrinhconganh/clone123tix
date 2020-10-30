@@ -1,0 +1,22 @@
+.adminLeft{
+    text-align: center;
+    .adminTK{
+        
+        img{
+            height: 50px;
+        }
+    }
+    
+    h4{
+        font-size: 20px;
+        
+        &:hover{
+            background-color: forestgreen;
+            cursor: pointer;
+        }
+    }
+}
+.adminRight{
+    display: flex;
+    
+}
