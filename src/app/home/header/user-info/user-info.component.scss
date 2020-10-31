@@ -15,26 +15,26 @@
   }
   @include for-size(sm) {
     max-width: 98%;
-    padding: 50px 0;
+    padding: $pad-mar8 0;
   }
 
   .user-info--content {
     margin-top: -40px;
     border: 1px solid rgba(59, 59, 59, 0.452);
-    padding: 50px 40px 20px 40px;
+    padding: $pad-mar8 $pad-mar7 $pad-mar4 $pad-mar7;
     background: rgb(212, 168, 123);
     transition: all 0.5s;
     @include for-size(sm) {
-      padding-top: 10px;
+      padding-top: $pad-mar2;
     }
     @include for-size(xs) {
-      padding: 10px;
+      padding: $pad-mar2;
     }
   }
   .user-info-left {
     text-align: center;
     padding: 0 80px;
-    margin-top: 30px;
+    margin-top: $pad-mar6;
     @include for-size(lg) {
       text-align: center;
       padding: 0 80px 0 0;
@@ -73,7 +73,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            background-color: rgba(0, 0, 0, 0.473);
+            background-color: $color-fontL-o3;
             @include wh-circle(150px);
             border-radius: 50%;
             opacity: 0;
@@ -104,18 +104,18 @@
     }
     .user-name {
       padding: 15px 0;
-      font-size: 25px;
+      font-size:$font-size5;
       font-weight: 550;
       border-bottom: solid 1px rgb(194, 194, 194);
       @include for-size(sm) {
         @include col-bs4(50%);
         text-align: left;
-        padding-left: 10px;
+        padding-left: $pad-mar2;
         border-bottom: none;
         align-self: center;
       }
       @include for-size(xs) {
-        font-size: 18px;
+        font-size: $font-size3;
         padding-left: 0;
       }
     }
@@ -134,19 +134,19 @@
       p.method-item {
         color: rgb(95, 95, 95);
         cursor: pointer;
-        padding: 10px 0;
+        padding: $pad-mar2 0;
         position: relative;
         transition: all 0.3s;
         @include for-size(sm) {
-          font-size: 15px;
+          font-size: $font-size2;
           align-self: flex-end;
         }
         @include for-size(phone-sm) {
-          font-size: 18px;
+          font-size: $font-size3;
         }
         &.active {
           color: #fb4226;
-          font-size: 18px;
+          font-size: $font-size3;
         }
         &:after {
           content: "";
@@ -176,7 +176,7 @@
     h1 {
       color: rgb(88, 88, 88);
       @include for-size(xs) {
-        font-size: 30px;
+        font-size: $font-size6;
       }
     }
     @include for-size(md) {
@@ -185,7 +185,7 @@
     }
     @include for-size(sm) {
       @include col-bs4(100%);
-      margin-top: 30px;
+      margin-top: $pad-mar6;
       padding: 0;
     }
     text-align: center;
@@ -193,7 +193,7 @@
     .change-pass__content,
     .lichsu-datve__content {
       .lichSuVe-title {
-        margin-bottom: 30px;
+        margin-bottom: $pad-mar6;
       }
       .info__content,
       .pass-content {
@@ -202,16 +202,16 @@
           text-align: left;
           label {
             font-weight: 550;
-            font-size: 18px;
-            margin-top: 30px;
+            font-size: $font-size3;
+            margin-top: $pad-mar6;
             @include for-size(xs) {
-              margin: 20px 0 0;
-              font-size: 15px;
+              margin: $pad-mar4 0 0;
+              font-size: $font-size2;
             }
           }
           input {
             width: 100%;
-            padding: 5px;
+            padding: $pad-mar1;
             background: transparent;
             border: none;
             border-bottom: 1px solid #00c6d7;
@@ -232,9 +232,9 @@
           text-align: center;
           border: 0;
           color: #000000;
-          font-size: 17px;
+          font-size: $font-size3;
           font-weight: 600;
-          padding: 14px 90px;
+          padding: $font-size2 90px;
           background-color: #ffffffe7;
           border: 3px solid rgba(95, 113, 141, 0.43);
           box-shadow: 0 12px 32px 0 rgba(114, 239, 255, 0.71);
@@ -267,7 +267,7 @@
         p.method-item {
           color: rgb(194, 194, 194);
           &.active {
-            color: #fb4226ff;
+            color: $color-headingA;
           }
           &:after {
             content: "";
@@ -285,7 +285,7 @@
       .change-pass__content,
       .lichsu-datve__content {
         .lichSuVe-title {
-          margin-bottom: 30px;
+          margin-bottom: $pad-mar6;
         }
         .info__content,
         .pass-content {
@@ -303,7 +303,7 @@
         .info__content {
           label {
             @include for-size(lg) {
-              margin-top: 20px;
+              margin-top: $pad-mar4;
             }
           }
         }

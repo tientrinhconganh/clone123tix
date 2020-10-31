@@ -1,3 +1,4 @@
+@import "main";
 .modal-content{
     background-color: indigo;
     .modal-header{
@@ -6,13 +7,13 @@
             padding: 0;
         }
       h2{
-          font-size: 25px;
+          font-size: $pad-mar5;
           color: white;
       }
 
     }
     label{
-        font-size: 18px;
+        font-size: $font-size3;
         color: khaki;
     }
     .btn-xacNhan{

@@ -6,6 +6,8 @@ import {PipeModule} from '../../core/pipe/pipe.module'
 import {BuyTicketComponent} from './buy-ticket.component'
 import {SharingModule} from '../../core/share/sharing.module'
 import { CountdownModule } from 'ngx-countdown';
+import { NgxSpinnerModule } from "ngx-spinner";
+
 @NgModule({
   declarations: [ChairComponent, SeatListComponent,BuyTicketComponent],
   imports: [
@@ -13,7 +15,8 @@ import { CountdownModule } from 'ngx-countdown';
     PipeModule,
     SharingModule,
     CountdownModule,
-    CountdownModule
+    CountdownModule,
+    NgxSpinnerModule
   ],
   exports:[
     BuyTicketComponent

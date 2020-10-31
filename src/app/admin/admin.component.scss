@@ -1,3 +1,4 @@
+@import "main";
 .adminLeft{
     text-align: center;
     .adminTK{
@@ -8,7 +9,7 @@
     }
     
     h4{
-        font-size: 20px;
+        font-size: $font-size4;
         
         &:hover{
             background-color: forestgreen;

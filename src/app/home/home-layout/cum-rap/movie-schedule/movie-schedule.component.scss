@@ -4,15 +4,15 @@
   cursor: context-menu;
   list-style: none;
   @include for-size(sm) {
-    margin-top: 10px;
+    margin-top: $pad-mar2;
     border-top: 1px solid rgba(0, 0, 0, 0.692);
-    padding: 30px 40px 0 40px;
+    padding: $pad-mar6 $pad-mar7 0 $pad-mar7;
   }
   @include for-size(phone-sm) {
     border-top: #188f57 solid 1px;
-    margin-top: 20px;
-    margin-right:5px;
-    padding: 10px 5px 10px 20px;
+    margin-top: $pad-mar4;
+    margin-right:$pad-mar1;
+    padding: $pad-mar2 $pad-mar1 $pad-mar2 $pad-mar4;
   }
   .lich-phim__content {
     img {
@@ -40,7 +40,7 @@
     .lich-phim__title {
       font-weight: bold;
       .lich-tenPhim {
-        font-size: 15px;
+        font-size: $font-size2;
         background-color:  #fb4226;
         border-radius: 4px;
         padding: 1px 8px;
@@ -48,9 +48,9 @@
         min-width: 33px;
         text-align: center;
         display: inline-block;
-        margin-bottom: 10px;
+        margin-bottom: $pad-mar2;
         @include for-size(phone-sm) {
-          font-size: 12px;
+          font-size: $font-size1;
           display: block;
           margin-bottom: 0px;
           width: 50px;
@@ -58,13 +58,13 @@
       }
       .tenPhim {
         @include for-size(phone-sm) {
-          font-size: 12px;
+          font-size: $font-size1;
         }
       }
       p {
         color: rgb(0, 0, 0, 0.6);
         @include for-size(phone-sm) {
-          font-size: 12px;
+          font-size: $font-size1;
         }
       }
     }
@@ -77,19 +77,19 @@
   .lich-phim__suatChieu {
     .suatChieu__2D {
       text-align: center;
-      font-size: 20px;
+      font-size: $font-size4;
       font-weight: bold;
       color: rgb(255, 255, 255);
-      margin:5px 0;
+      margin:$pad-mar1 0;
       background-image: linear-gradient(#3beb98, #188f57);
       width: 50px;
       @include for-size(xs) {
-        margin: 10px;
+        margin: $pad-mar2;
       }
       @include for-size(phone-sm) {
-        margin-right: 15px !important;
-        font-size: 15px;
-        padding: 4px;
+        margin-right: $pad-mar3 !important;
+        font-size: $font-size2;
+        padding: $pad-mar1;
         margin: 0
       }
     }
@@ -110,7 +110,7 @@
 }
 .lichPhim-dark {
   @include for-size(sm) {
-    border-top: 1px solid rgba(255, 255, 255, 0.692);
+    border-top: 1px solid $color-headingD;
   }
   .lich-phim__content {
     cursor: pointer;
@@ -124,7 +124,7 @@
       p {
         color:$color-fontD-o6;
         @include for-size(phone-sm) {
-          color: rgb(0, 0, 0, 0.6);
+          color: $color-fontL-o6;
         }
       }
     }
@@ -133,22 +133,22 @@
 .lichPhim-empty {
   padding: 2% 25%;
   font-size: 20px;
-  text-shadow: 0px 0 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 0 $pad-mar1 $color-fontL-o6;
   margin: 10px auto;
   @include for-size(phone-sm) {
-    text-shadow: 0px 0 5px hsla(8, 96%, 57%, 0.5);
-    color: #fb4226;
-    font-size: 15px;
+    text-shadow: 0px 0 $pad-mar1 hsla(8, 96%, 57%, 0.5);
+    color: $color-headingA;
+    font-size: $font-size2;
     & p {
       margin: 0;
     }
   }
   .lichPhim-dark {
-    text-shadow: 0px 0 4px white;
-    color: #fff;
+    text-shadow: 0px 0 $pad-mar1 white;
+    color: white;
     @include for-size(phone-sm) {
-      text-shadow: 0px 0 5px hsla(8, 96%, 57%, 0.5);
-      color: #fb4226;
+      text-shadow: 0px 0 $pad-mar1 hsla(8, 96%, 57%, 0.5);
+      color: $color-headingA;
     }
   }
 }

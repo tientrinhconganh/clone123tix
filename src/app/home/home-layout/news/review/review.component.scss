@@ -1,17 +1,18 @@
+@import "main";
 .news{
     .news-img{
         width: 100%;
         height: 100%;
-        border-radius: 5px;
+        border-radius: $pad-mar1;
     }
     .news-title{
         text-overflow: ellipsis;
         line-height: 20px;
         font-family: 'SF Medium';
         height: 42px;
-        font-size: 16px;
+        font-size: $font-size2;
         transition: color .2s;
-        margin: 5px 0px;
+        margin: $pad-mar1 0px;
         a{
             color: #000000;
             text-decoration: none;
@@ -19,7 +20,7 @@
     }
     .news-text{
         text-align: justify;
-        font-size: 13px;
+        font-size:$font-size1;
         color: #4a4a4a;
         line-height: 19px;
         margin: 0;
@@ -27,13 +28,13 @@
     .social-count {
         span {
           color: #bbb;
-          font-size: 12px;
+          font-size: $font-size1;
           line-height: 1;
         }
 
         .iconFacebook {
           vertical-align: middle;
-          margin-right: 10px;
+          margin-right: $pad-mar2;
         //   margin-top: 2px;
           height: auto;
           width: 18px;
@@ -49,11 +50,11 @@
     img{
         height: 65px;
         width: 100%;
-        border-radius: 4px;
+        border-radius: $pad-mar1;
     }
     .text p{
         color: #000000;
-        margin-top: 5px;
-        font-size: 13px;
+        margin-top: $pad-mar1;
+        font-size: $font-size1;
     }
 }

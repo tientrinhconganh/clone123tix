@@ -10,12 +10,12 @@
   opacity: 1;
 }
 .mat-form-field {
-  font-size: 14px;
+  font-size: $font-size2;
   width: 100%;
 }
 .add-film {
   text-align: right;
-  margin-right:15px;
+  margin-right:$pad-mar3;
   //   margin-bottom: $pad-mar3;
 }
 .table-content {
@@ -44,10 +44,10 @@ table {
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
-  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
-    0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px $pad-mar1 $pad-mar1 -3px rgba(0, 0, 0, 0.2),
+    0px 8px $pad-mar2 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
   th {
-    padding: 10px 20px;
+    padding: $pad-mar2 $pad-mar4;
     white-space: nowrap;
     margin: 0 auto;
   }

@@ -44,11 +44,11 @@
           }
         }
         @include for-size(lg) {
-          padding: 10px 30px;
+          padding: $pad-mar2 $pad-mar6;
         }
         @include for-size(xs) {
           width: fit-content;
-          padding: 10px 20px;
+          padding: $pad-mar2 $pad-mar4;
         }
         @include for-size(phone-sm) {
           background-color: transparent;
@@ -65,7 +65,7 @@
         .lich-chieu__content {
           border: none;
           .lich-chieu__rap {
-            padding-right: 15px;
+            padding-right: $pad-mar3;
             height: 100%;
             .lich-chieu__item{
               img{
@@ -83,7 +83,7 @@
   }
 }
 .lich-chieu__phim {
-  padding-left: 50px;
+  padding-left: $pad-mar8;
 }
 .lich-phim__ngayXem {
   height: 85px;
@@ -94,42 +94,42 @@
   @include for-size(sm) {
   }
   .ngay-xem-item {
-    padding: 0 50px;
-    font-size: 21px;
+    padding: 0 $pad-mar8;
+    font-size: $font-size4;
     text-align: center;
     cursor: pointer;
     @include for-size(phone-sm){
-      padding: 0 30px;
+      padding: 0 $pad-mar6;
     }
   }
   .active {
-    color: #fb4226;
+    color: $color-headingA;
   }
 }
 .rap-dark {
   .lich-phim__ngayXem {
-    color:#ffffffcc;
+    color:$color-fontD-o8;
   }
   .suatChieu__content {
     span {
-      color:#16db5e !important;
+      color:$color-timeD !important;
     }
   }
   .tenPhim {
-    color:  #fff !important;
+    color:  white !important;
   }
   .thoiLuong {
-    color: hsla(0, 0%, 100%, 0.6)!important;
+    color: $color-fontD-o6 !important;
   }
   .tenCumRap {
-    color:  #fff !important;
+    color: white !important;
   }
 }
 .lich-phim__suatChieu {
   .suatChieu__content {
     span {
       color: #108f3e;
-      font-size: 18px !important;
+      font-size: $font-size3 !important;
     }
   }
 }

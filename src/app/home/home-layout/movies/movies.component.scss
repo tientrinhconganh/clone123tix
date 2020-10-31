@@ -1,7 +1,9 @@
+
+@import "main";
 .movies {
-    border-radius: 20px;
+    border-radius: $pad-mar4;
     
-    margin: 30px 0;
+    margin: $pad-mar6 0;
     
     .movies-tabs {
       width: 30%;
@@ -9,7 +11,7 @@
         cursor: pointer;
         color: black;
         // transition: all 0.4s;
-        font-size: 24px;
+        font-size: $font-size5;
         // position: relative;
         // &:before {
         //   content: "";
@@ -25,7 +27,7 @@
       }
       .active {
         color: #fa5238;
-        font-size: 27px;
+        font-size: $font-size5;
         font-weight: 600;
         &:before {
           width: 100%;

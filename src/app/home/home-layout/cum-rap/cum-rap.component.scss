@@ -16,14 +16,14 @@
   }
   .rap__title {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom:$pad-mar6;
   }
   .rap__content {
     position: relative;
     .rap__logo {
       @include for-size(xl) {
         width: 70%;
-        margin: 15px auto !important;
+        margin: $pad-mar3 auto !important;
       }
       @include for-size(sm) {
         width: 80%;
@@ -40,7 +40,7 @@
         list-style: none;
         opacity: 0.5;
         transition: all 0.3s;
-        padding: 25px;
+        padding: $pad-mar5;
         p,
         i {
           display: none;
@@ -55,21 +55,21 @@
         @include for-size(xl) {
         }
         @include for-size(ll) {
-          padding: 20px;
+          padding: $pad-mar4;
         }
         @include for-size(lg) {
-          padding: 15px;
+          padding: $pad-mar3;
         }
         @include for-size(md) {
-          padding: 10px;
+          padding: $pad-mar2;
         }
         @include for-size(sm) {
-          padding: 0 40px 20px 40px;
+          padding: 0 $pad-mar7 $pad-mar4 $pad-mar7;
         }
         @include for-size(xs) {
           display: flex;
           width: 33.3333%;
-          padding: 0 30px 20px 30px;
+          padding: 0 $pad-mar6 $pad-mar4 $pad-mar6;
           img {
             width: 100%;
           }
@@ -88,7 +88,7 @@
               position: relative;
               img {
                 width: 20%;
-                margin: 0px 0 0px 30px;
+                margin: 0px 0 0px $pad-mar6;
               }
               & p,
               i {

@@ -47,16 +47,16 @@
       bottom: 10px;
       left: 30px;
       p {
-        font-size: 18px;
+        font-size: $pad-mar5;
         color: rgba(0, 0, 0, 0.7);
       }
       .detail-header__title {
         p {
           font-size: 25px;
           font-weight: 500;
-          color:#000;
+          color:black;
           @include for-size(phone-sm){
-            font-size: 20px;
+            font-size:$pad-mar4;
           }
         }
       }
@@ -68,7 +68,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 960px;
+    max-width: $width-lg;
     width: 100%;
     transition: all 0.5;
     @include for-size(lg) {
@@ -194,57 +194,57 @@
   }
 }
 .detail-footer {
-  padding:50px 0;
-  max-width: 1160px;
+  padding:$pad-mar8 0;
+  max-width:$width-ll;
   @include for-size(lg) {
-    max-width: 960px;
+    max-width: $width-lg;
   }
   @include for-size(md) {
     max-width: 100%;
   }
   @include for-size(sm) {
-    padding: 10px ; 
+    padding: $pad-mar2 ; 
   }
   .detai-footer-title {
-    padding:0 50px;
+    padding:0 $pad-mar8;
     h3 {
       color:  rgba(0, 0, 0, 0.6);
       padding: 0 $pad-mar5;
       transition: all 0.5s;
-      font-size: 20px;
+      font-size: $font-size4;
       font-weight: 400;
       &:hover {
-        color: #fb4226;
-        font-size: 25px;
+        color:$color-headingA;
+        font-size: $font-size5;
         @include for-size(xs) {
-          font-size: 18px;
+          font-size: $font-size3;
         }
       }
       @include for-size(xs) {
         font-size: 15px;
-        padding: 0 20px;
+        padding: 0 $pad-mar4;
       }
     }
     h3.active {
       font-weight: 550;
-      color: #fb4226;
-      font-size: 25px;
+      color: $color-headingA;
+      font-size: $font-size5;
       pointer-events: none;
       @include for-size(xs) {
-        font-size: 18px;
+        font-size: $font-size3;
       }
       @include for-size(iphone) {
-        font-size: 18px;
+        font-size: $font-size3;
       }
     }
     @include for-size(sm) {
-      padding: 20px 20px;
+      padding: $pad-mar4 $pad-mar4;
     }
     @include for-size(xs) {
-      padding: 20px 20px;
+      padding: $pad-mar4 $pad-mar4;
     }
     @include for-size(phone-sm) {
-      padding: 20px 0;
+      padding: $pad-mar4 0;
     }
   }
 }
@@ -255,11 +255,11 @@
   .detail-header {
     .header-title {
       p {
-        color: #ffffffcc;
+        color: $color-fontD-o8;
       }
       .detail-header__title {
         p {
-          color: #fff;
+          color: white;
         }
       }
     }
@@ -267,9 +267,9 @@
 
   .detai-footer-title {
     h3 {
-      color: hsla(0, 0%, 100%, 0.6);
+      color:$color-fontD-o6;
       &:hover {
-        color:  #fb4226;
+        color: $color-headingA;
       }
     }
   }
@@ -279,8 +279,8 @@
   background-image: url("../../../assets/img/bg-city.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding-top: 100px ;
-  padding-bottom: 50px ;
+  padding-top: $pad-marHeading ;
+  padding-bottom: $pad-mar8 ;
 
   .detail_left{
     position: relative;
@@ -294,7 +294,7 @@
 
   .detail_center{
     color: white;
-    font-size: 17px;
+    font-size: $font-size3;
     .rong{
       padding: 10%;
     }

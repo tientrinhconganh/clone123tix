@@ -2,8 +2,8 @@
 
 @mixin bgc {
   background-color: #b4cc5c;
-  box-shadow: 0 0 6px 1px #1b1b1b;
-  border-radius: 15px;
+  box-shadow: 0 0 $pad-mar1 1px #1b1b1b;
+  border-radius: $pad-mar3;
 }
 
 #dat-ve {
@@ -24,14 +24,14 @@
 }
 .trang-datVe {
   color:#fff;
-  padding: 60px 0;
+  padding: $pad-mar8 0;
   width: 1460px;
   @include for-size(ll) {
-    width: 1160px;
+    width: $width-xl;
     padding: 6% 0;
   }
   @include for-size(lg) {
-    width: 960px;
+    width: $width-lg;
   }
   @include for-size(md) {
     width: 95%;
@@ -74,12 +74,12 @@
     }
   }
   .info-title {
-    font-size: 25px;
+    font-size: $font-size5;
     @include for-size(lg) {
-      font-size: 20px;
+      font-size: $font-size4;
     }
     @include for-size(md) {
-      font-size: 20px;
+      font-size: $font-size4;
     }
   }
   .ve__info-phim,
@@ -87,10 +87,10 @@
   .ve__giaVe,
   .combo-content{
     @include bgc;
-    padding: 10px 30px;
+    padding: $pad-mar2 $pad-mar6;
     margin: 15px 0;
     @include for-size(lg) {
-      padding: 10px;
+      padding: $pad-mar2;
     }
     img {
       position: relative;
@@ -116,19 +116,19 @@
     }
     .img-border {
       position: absolute;
-      top: 10px;
+      top: $pad-mar2;
     }
     @include for-size(md) {
-      padding: 10px 15px;
+      padding: $pad-mar2 $pad-mar3;
     }
   }
 
   
   .button-ve {
-    background-color:#afafaf;
+    background-color:$color-disabled;
     background-image: none;
     pointer-events: none;
-    padding: 10px;
+    padding: $pad-mar2;
     border-radius: 3px;
     width: 12%;
     color: #fff;
@@ -138,11 +138,11 @@
     @include for-size(sm) {
       @include positionFixed(bottom,left,0,0);
       width: 100%;
-      font-size: 30px;
+      font-size: $font-size6;
       z-index: 10;
     }
     @include for-size(xs) {
-      font-size: 40px;
+      font-size: $font-size7;
     }
     &.active {
       background-image: linear-gradient(
@@ -167,10 +167,10 @@
     }
     @include for-size(sm) {
       @include bgc; // Hàm Mixin ở dòng 3 
-      padding: 10px 30px;
+      padding: $pad-mar2 $pad-mar6;
     }
     @include for-size(xs) {
-      padding: 10px 5px;
+      padding: $pad-mar2 $pad-mar1;
     }
     @include for-size(xs) {
       // background: none;
@@ -179,11 +179,11 @@
     @include for-size(phone-sm) {
       background: none;
       box-shadow: none;
-      padding: 10px 0;
+      padding: $pad-mar2 0;
     }
     .tongTien {
-      padding: 0 5px;
-      padding-top: 15px;
+      padding: 0 $pad-mar1;
+      padding-top: $pad-mar3;
       p:last-child {
         font-size: 18px;
         @extend %fontColor-blue;
@@ -191,19 +191,19 @@
     }
     .bap-nuoc {
       // Loại bỏ padding của col
-      padding: 0 5px;
+      padding: 0 5$pad-mar1;
     }
     .giaVe__left {
       width: 80%;
       @include for-size(lg) {
-        font-size: 15px;
+        font-size: $font-size2;
       }
     }
     .giaVe-bap,
     .giaVe__time {
       @include for-size(md) {
         @include bgc;
-        padding: 10px;
+        padding:$pad-mar2;
       }
       @include for-size(sm) {
         background: none;
@@ -225,7 +225,7 @@
       @include for-size(md) {
         text-align: left;
         border: none;
-        margin-top: 15px;
+        margin-top: $pad-mar3;
       }
       @include for-size(sm) {
         text-align: right;
@@ -235,7 +235,7 @@
       }
       @include for-size(phone-sm) {
         border: none;
-        margin-top: 15px;
+        margin-top: $pad-mar3;
         text-align: left;
         display: flex !important;
         border-radius: 5px;
@@ -243,10 +243,10 @@
 
       .count-down {
         padding-top: calc(25px + 0.75rem);
-        font-size: 25px;
+        font-size: $font-size5;
         @extend %fontColor-blue;
         @include for-size(lg) {
-          padding-top: 15px;
+          padding-top: $pad-mar3;
         }
         @include for-size(md) {
           text-align: right;
@@ -275,27 +275,27 @@
       .ngayChieu {
         .suatChieu__2D {
           text-align: center;
-          font-size: 20px;
+          font-size: $font-size4;
           font-weight: bold;
           color: #fff;
           margin: 0;
           background-image: linear-gradient(#3beb98, #188f57);
           width: 50px;
-          margin: 10px 0;
+          margin: $pad-mar2 0;
         }
         .ngayGio {
           align-self: center;
-          font-size: 18px;
+          font-size: $font-size3;
           // @extend %fontColor-blue;
           @include for-size(lg) {
-            font-size: 18px;
+            font-size: $font-size3;
           }
           span {
-            font-size: 15px;
+            font-size: $font-size2;
             text-shadow: none;
             color: brown;
             @include for-size(lg) {
-              font-size: 12px;
+              font-size: $font-size1;
             }
           }
         }
@@ -329,14 +329,14 @@
     .veRap-info {
       width: 100%;
       .ghe-da-dat {
-        margin-top: 5px;
-        font-size: 18px;
+        margin-top: $pad-mar1;
+        font-size: $font-size3;
         @include for-size(md) {
-          font-size: 15px;
+          font-size: $font-size2;
         }
         .veRap-info__rap,
         span {
-          font-size: 18px;
+          font-size: $font-size3;
           @extend %fontColor-blue;
           
         }
@@ -391,7 +391,7 @@
 
 .bg-combo {
   width: 0;
-  background-color: #fff;
+  background-color:$color-fontD;
   height: 100%;
   @include positionFixed(top,right,0,0);
   z-index: 10;
@@ -417,7 +417,7 @@ table {
   }
   .button-close {
     text-align: right;
-    font-size: 25px;
+    font-size: $font-size5;
     color: hsla(347, 70%, 48%, 0.7);
     cursor: pointer;
     &:hover {
@@ -429,13 +429,13 @@ table {
     color: rgb(110, 110, 110);
     text-align: center;
     border-bottom: 1px solid #cecece;
-    padding-bottom: 15px;
+    padding-bottom: $pad-mar3;
   }
   .combo-body {
-    margin: 15px auto;
+    margin: $pad-mar3 auto;
   }
   .combo-text {
-    font-size: 18px;
+    font-size: $font-size3;
     line-height: 30px;
     p:first-child {
       color: black;
@@ -452,11 +452,11 @@ table {
     margin-left: auto;
   }
   .combo-footer {
-    margin-top: 15px;
-    font-size: 18px;
+    margin-top: $pad-mar3;
+    font-size:$font-size3;
     text-align: right;
     span:last-child {
-      margin-left: 50px;
+      margin-left: $pad-mar8;
       width: 100px;
     }
   }
@@ -470,7 +470,7 @@ table {
     line-height: 30px;
     cursor: pointer;
     font-weight: 600;
-    font-size: 20px;
+    font-size: $font-size4;
     background-color: #397d90;
     color: #fff;
   }

@@ -1,3 +1,4 @@
+@import "main";
 .dang-ky{
     width: 100vw;
     height: 108vh;
@@ -13,10 +14,10 @@
         left: 50%;
         transform: translate(-50%,-50%);
         background-image: linear-gradient(to bottom,rgba(20,50,93,.9),rgba(8,22,48,.9));
-        box-shadow: 0 0 10px 0 rgba(0,0,0,.45);
+        box-shadow: 0 0 $pad-mar2 0 rgba(0,0,0,.45);
         text-align: center;
         color: #fff;
-        border-radius: 6px;
+        border-radius: $pad-mar1;
         .form-item{width: 100%;}
         .input-group{
             input{
@@ -27,13 +28,8 @@
     }
     img{
         width: 50px;
-        padding-top: 10px;
+        padding-top: $pad-mar2;
         cursor: pointer;
     }
    
 }
-// .form-dk{
-//     width: 35%;
-//     margin: 0 auto;
-//     height: fit-content;
-// }

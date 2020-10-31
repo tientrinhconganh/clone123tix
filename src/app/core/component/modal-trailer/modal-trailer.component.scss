@@ -1,3 +1,5 @@
+@import "main";
+
 .modal-trailer{
     .modal-content{
         background: transparent;
@@ -10,7 +12,7 @@
             cursor: pointer;
             border-radius: 50%;
             &:hover{
-                box-shadow: 0 0 40px 5px gray;
+                box-shadow: 0 0 $pad-mar7 $pad-mar1 gray;
             }
         }
     }

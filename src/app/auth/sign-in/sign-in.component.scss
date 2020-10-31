@@ -1,7 +1,8 @@
+@import "main";
 .signin--vertical{
     img{
         width: 50px;
-        padding-top: 10px;
+        padding-top: $pad-mar2;
         cursor: pointer;
     }
     width: 100vw;
@@ -21,6 +22,6 @@
         box-shadow: 0 0 10px 0 rgba(0,0,0,.45);
         text-align: center;
         color: #fff;
-        border-radius: 6px;
+        border-radius: $pad-mar1;
     }
 }

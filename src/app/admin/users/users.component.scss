@@ -14,7 +14,7 @@
   overflow-x: auto;
   table {
     width: 98%;
-    padding:50px;
+    padding:$pad-mar8;
     margin: 0 auto;
     th {
       padding: 10px 20px;
@@ -23,19 +23,19 @@
     }
     td {
       // max-width: 150px;
-      padding: 10px 24px;
+      padding: $pad-mar2 $pad-mar5;
       align-self: center;
     }
   }
 }
 
 .mat-form-field {
-  font-size: 14px;
+  font-size: $font-size2;
   width: 100%;
 }
 .add-user {
   text-align: right;
-  margin-right: 15px;
+  margin-right: $pad-mar3;
   //   margin-bottom: 15px;
 }
 .remove-input {
@@ -51,7 +51,7 @@
 }
 .action {
   i {
-    font-size: 18px;
+    font-size: $font-size3;
     cursor: pointer;
   }
   i:first-child:hover {

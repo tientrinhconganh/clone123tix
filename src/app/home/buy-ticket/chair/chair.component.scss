@@ -8,7 +8,7 @@
 }
 .ghe {
   border: 1px #c7c6c7 solid;
-  border-radius: 5px;
+  border-radius: $pad-mar1;
   cursor: pointer;
   background-color: #002f4f;
   p {
@@ -31,7 +31,7 @@
 
 .ghe-selected {
   border: 1px #c7c6c7 solid;
-  border-radius: 5px;
+  border-radius: $pad-mar1;
   background-color: #4d4d4d;
   pointer-events: none;
 }

@@ -12,6 +12,8 @@ import { CountdownComponent } from 'ngx-countdown';
 import { AuthService } from '../../core/services/auth.service';
 import Swal from 'sweetalert2';
 declare var $: any;
+import { NgxSpinnerService } from "ngx-spinner";
+
 
 @Component({
   selector: 'app-buy-ticket',
@@ -72,7 +74,8 @@ export class BuyTicketComponent implements OnInit, AfterViewInit{
     public router: Router,
     private auth: AuthService,
     private ghe: GheService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private spinner: NgxSpinnerService
   ) {}
 
   warningGhe() {
@@ -82,13 +85,6 @@ export class BuyTicketComponent implements OnInit, AfterViewInit{
           parseInt(this.gheDangChon[i].tenGhe) -
             parseInt(this.gheDangChon[i + 1].tenGhe)
         );
-        // if (a === 2) {
-        //   // Không được có ghế trống ở giữa. 
-        //   this.isWarning = true;
-        //   return;
-        // } else {
-        //   this.isWarning = false;
-        // }
       }
     }
   }
@@ -211,6 +207,9 @@ export class BuyTicketComponent implements OnInit, AfterViewInit{
   }
 
   ngOnInit(): void {
+setTimeout(() => {
+  this.spinner.hide();
+}, 3000);
     this.currentHeight = window.innerHeight;
     this.currentWidth = window.innerWidth;
     if (this.currentWidth > 420) {

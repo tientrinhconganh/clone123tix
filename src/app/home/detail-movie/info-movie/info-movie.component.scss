@@ -15,10 +15,10 @@
 }
 #detailMain .detailMainStyle {
   margin-top: 50px;
-  margin-right:15px;
-  margin-left:15px;
+  margin-right:$pad-mar3;
+  margin-left:$pad-mar3;
   @include for-size(sm) {
-    margin-top: 20px;
+    margin-top: $pad-mar4;
   }
 }
 #detailMain .left {
@@ -26,15 +26,15 @@
 }
 #detailMain .film {
   padding: 0 7px;
-  margin-bottom:15px;
+  margin-bottom:$pad-mar3;
 }
 #detailMain .rowLeftInfo {
-  margin-bottom: 10px;
+  margin-bottom: $pad-mar2;
 }
 #detailMain .contentTitle {
   width: 35%;
   float: left;
-  font-size: 18px;
+  font-size: $font-size3;
   font-family: "SF Medium";
   @include for-size(phone-sm) {
     width:50% !important;
@@ -43,24 +43,24 @@
 #detailMain .contentInfo {
   width: 40%;
   float: left;
-  font-size: 18px;
+  font-size: $font-size3;
   color: rgb(0, 0, 0, 0.6);
   @include for-size(xs) {
-    font-size: 15px;
+    font-size: $font-size2;
   }
 }
 
 #detailMain .right {
-  padding-left: 10px !important;
+  padding-left: $pad-mar2 !important;
   margin-bottom: 0;
 }
 #detailMain .rowLeftInfo {
-  margin-bottom: 10px;
+  margin-bottom: $pad-mar2;
 }
 #detailMain .contentTitle {
   width: 35%;
   float: left;
-  font-size: 18px;
+  font-size: $font-size3;
   font-family: "SF Medium";
 }
 
@@ -71,12 +71,12 @@
   font-family: "SF Regular";
   width: 100%;
   float: left;
-  font-size: 20px;
+  font-size: $font-size4;
   @include for-size(xs) {
-    font-size: 18px;
+    font-size: $font-size3;
   }
   @include for-size(iphone) {
-    font-size: 15px;
+    font-size: $font-size2;
   }
 }
 #detailMain.dark-info {
@@ -107,7 +107,7 @@
   .film {
     &.right {
       .contentTitle {
-        font-size: 20px;
+        font-size: $font-size4;
       }
     }
   }

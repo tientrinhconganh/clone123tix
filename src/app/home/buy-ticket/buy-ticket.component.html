@@ -1,4 +1,7 @@
 <!-- <app-spinner-background ></app-spinner-background> -->
+<ngx-spinner class="bg" bdColor="rgba(0, 0, 0, 1)">
+    <img src='https://media.giphy.com/media/o8igknyuKs6aY/giphy.gif' />
+</ngx-spinner>
 <div id="dat-ve">
     <div class="trang-datVe mx-auto">
         <div class="d-md-flex d-sm-block">
@@ -11,7 +14,7 @@
             </div>
             <div *ngIf="thongTinPhim ml-auto  " class=" thongTinPhim">
                 <div class="dat-ve-right ">
-                    <div class="ve__info-phim d-flex  col-md-12  "  *ngIf="isThanhToan"> 
+                    <div class="ve__info-phim d-flex  col-md-12  " *ngIf="isThanhToan">
                         <img [src]="thongTinPhim.hinhAnh" alt="">
                         <div class="img-border">
                             <img src="assets/img/border.png" alt="">
@@ -49,7 +52,7 @@
                         <div (click)='closeCombo()' class="button-close">
                             <i class="fas fa-times"></i>
                         </div>
-            
+
                         <h1 class="combo-heading">Combo</h1>
                         <div class="d-flex combo-body align-items-center py-2" *ngFor='let combo of mangCombo'>
                             <div class="combo-img col-3">
@@ -74,9 +77,9 @@
 
                     <div class="ve__giaVe col-12">
                         <div class="row d-md-block d-flex d-lg-flex">
-                            <div class="col-lg-7 col-md-12 col-6  giaVe-bap "  *ngIf="isThanhToan">
-                                <div class="row" >
-                                    <div  class="col-12 d-flex  bap-nuoc">
+                            <div class="col-lg-7 col-md-12 col-6  giaVe-bap " *ngIf="isThanhToan">
+                                <div class="row">
+                                    <div class="col-12 d-flex  bap-nuoc">
                                         <p class="giaVe__left">Bắp Nước:</p>
                                         <p class="giaVe__right">{{tienCombo | currency}} </p>
                                     </div>
@@ -90,26 +93,28 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5 col-md-12 col-6 giaVe__time ml-md-auto  d-block d-md-flex d-lg-block " [ngClass]="{'timeBuoc1':!isThanhToan}">
+                            <div class="col-lg-5 col-md-12 col-6 giaVe__time ml-md-auto  d-block d-md-flex d-lg-block "
+                                [ngClass]="{'timeBuoc1':!isThanhToan}">
                                 <p class="">Thời Gian Giữ Ghế</p>
                                 <p class="count-down">
                                     <countdown #cd [config]="{ leftTime: leftTime, format: 'm:ss' }"
                                         (event)="onTimerFinished($event)"></countdown>
                                 </p>
-                                
+
                             </div>
                         </div>
                     </div>
-                    
-                    <div *ngIf="isConfirm && isThanhToan ; else buoc1" class="button-ve text-center py-2" (click)="datVe()"
-                        data-toggle="modal" data-target="#modalConfirm"
+
+                    <div *ngIf="isConfirm && isThanhToan ; else buoc1" class="button-ve text-center py-2"
+                        (click)="datVe()" data-toggle="modal" data-target="#modalConfirm"
                         [ngClass]="{'active':gheDangChon[0] && !isWarning}">
                         Mua Vé
                     </div>
                     <ng-template #buoc1>
-                        <div class="button-ve text-center py-2" (click)="datVeBuoc1()" [ngClass]="{'active':gheDangChon[0] && !isWarning}">
+                        <div class="button-ve text-center py-2" (click)="datVeBuoc1()"
+                            [ngClass]="{'active':gheDangChon[0] && !isWarning}">
                             Đặt Ghế
-                            <i *ngIf="isConfirm" class=" mx-2 fa fa-spinner fa-spin" ></i>
+                            <i *ngIf="isConfirm" class=" mx-2 fa fa-spinner fa-spin"></i>
                         </div>
                     </ng-template>
 
@@ -122,8 +127,8 @@
         <i class="fas fa-arrow-left"></i>
     </div>
     <div *ngIf=!thongTinPhim class="ve-spinner">
-        
-<!-- spinner -->
+
+        <!-- spinner -->
 
     </div>
     <div data-backdrop="static" data-keyboard="false" class="modal fade" id="modalWarning">
