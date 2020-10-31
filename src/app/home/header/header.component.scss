@@ -47,15 +47,15 @@
     );
     box-sizing: border-box;
     color: #fff;
-    text-align: center;
-    line-height: 30px;
-    width: 135px;
+    // text-align: center;
+    // line-height: 30px;
+    // width: 135px;
     font-weight: 550;
-    height: 30px;
+    // height: 30px;
     display: inline-block;
     border-radius: 3px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-    font-size: 14px;
+    // font-size: 14px;
     cursor: pointer;
     @include for-size(sm) {
       padding-left: 5%;
