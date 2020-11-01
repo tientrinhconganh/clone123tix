@@ -7,7 +7,7 @@
     background-size: contain;
     background-position: center;
     .dangky__content{
-        width: 25%;
+        width: 500px;
         height: auto;
         position: absolute;
         top: 50%;
@@ -22,9 +22,11 @@
         .input-group{
             input{
                 margin: 0 auto;
-            }
-            
+            }  
         }
+        @include for-size(xs){
+            width: 300px;
+    }
     }
     img{
         width: 50px;
