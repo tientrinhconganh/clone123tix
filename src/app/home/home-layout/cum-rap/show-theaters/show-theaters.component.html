@@ -1,6 +1,6 @@
 <div class="row lich-chieu" [ngClass]="{'lich-chieu-dark' : isTheme,'show':thongTinRap}">
     <div class="col-lg-5 col-md-6 lich-chieu__content">
-        <ul  class="lich-chieu__rap">
+        <ul  class="lich-chieu__rap px-5">
             <li *ngFor="let thongTinRap of thongTinRap,let index = index"
                 class="lich-chieu__item py-2 border-bottom" [ngClass]="{'active':index==indexActive}"
                 (click)="layMaCupRap(thongTinRap.maCumRap);changeIndex(index)"
