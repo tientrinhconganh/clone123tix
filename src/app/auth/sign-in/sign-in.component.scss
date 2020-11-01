@@ -12,7 +12,7 @@
     background-size: contain;
     background-position: center;
     .signin-modal{
-        width: 25%;
+        width: 500px;   
         height: auto;
         position: absolute;
         top: 50%;
@@ -23,5 +23,9 @@
         text-align: center;
         color: #fff;
         border-radius: $pad-mar1;
+        @include for-size(xs){
+            width: 300px;
+    }
     }
 }
+

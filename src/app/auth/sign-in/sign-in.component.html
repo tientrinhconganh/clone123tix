@@ -1,5 +1,5 @@
 <div class="signin--vertical" [ngClass]='{"show":isLogin,"hide":!isLogin}'>
-    <div class="container signin-modal">
+    <div class="signin-modal">
         <div class="row">
             <div class="mx-auto col-10">
                 <img src="https://tix.vn/app/assets/img/icons/web-logo.png" alt="" routerLink="/" class="img">
@@ -38,16 +38,8 @@
                   
                     <div class="py-3">
                         <button type="submit" class="btn btn-success mx-1">Đăng nhập</button>
-                        <p>Bạn chưa có tài khoản ?. <a routerLink="/signup">=> Đăng ký ngay</a></p>
-                        <!-- <div>
-                            Hoặc bạn có thể đăng nhập với:
-                            <button class="btn-social-icon mx-1" (click)="signInWithGoogle()">
-                              <fa-icon [icon]="faGoogle" class="faGoogle"></fa-icon>
-                          </button>
-                          <button class=" btn-social-icon mx-1 " (click)="signInWithFB()">
-                              <fa-icon [icon]="faFacebook" class="faFacebook"></fa-icon>
-                          </button>
-                        </div> -->
+                        <p>Bạn chưa có tài khoản ?. <a routerLink="/signup"> Đăng ký ngay</a></p>
+
                     </div>
                 </form>
               
