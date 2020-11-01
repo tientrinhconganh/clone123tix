@@ -1,6 +1,12 @@
 @import "main";
+.admin{
+    margin: 0;
+    padding: 0;
+}
 .adminLeft{
     text-align: center;
+    border-right: double;
+    border-bottom: double;
     .adminTK{
         
         img{
@@ -19,5 +25,4 @@
 }
 .adminRight{
     display: flex;
-    
 }

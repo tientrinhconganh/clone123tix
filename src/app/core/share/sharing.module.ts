@@ -5,7 +5,6 @@ import { ModalTrailerComponent } from '../component/modal-trailer/modal-trailer.
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { ThemSuaPhimComponent } from './components/them-sua-phim/them-sua-phim.component';
 import { ThemSuaLichChieuComponent } from './components/them-sua-lich-chieu/them-sua-lich-chieu.component';
-import { YoutubeComponent } from './components/you-tube/you-tube.component';
 import { WarningComponent } from './components/warning/warning.component';
 import { ConfirmComponent } from './components/confirm/confirm.component'
 @NgModule({
@@ -13,7 +12,6 @@ import { ConfirmComponent } from './components/confirm/confirm.component'
     ModalTrailerComponent, 
     ThemSuaPhimComponent, 
     ThemSuaLichChieuComponent, 
-    YoutubeComponent, 
     WarningComponent, 
     ConfirmComponent],
   imports: [
@@ -26,7 +24,6 @@ import { ConfirmComponent } from './components/confirm/confirm.component'
     ModalTrailerComponent,
     ThemSuaPhimComponent, 
     ThemSuaLichChieuComponent, 
-    YoutubeComponent, 
     WarningComponent, 
     ConfirmComponent
   ]

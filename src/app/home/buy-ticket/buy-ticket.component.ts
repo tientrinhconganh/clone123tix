@@ -37,6 +37,7 @@ export class BuyTicketComponent implements OnInit, AfterViewInit{
   currentWidth: number;
   currentHeight: number;
   currentUser: any;
+  loading: boolean=false;
   mangCombo: any[] = [
     {
       id: 'combo1',
@@ -208,7 +209,8 @@ export class BuyTicketComponent implements OnInit, AfterViewInit{
 
   ngOnInit(): void {
 setTimeout(() => {
-  this.spinner.hide();
+    this.spinner.hide();
+  
 }, 3000);
     this.currentHeight = window.innerHeight;
     this.currentWidth = window.innerWidth;
@@ -232,6 +234,7 @@ setTimeout(() => {
           next: (result) => {
             this.danhSachGhe = result.danhSachGhe;
             this.thongTinPhim = result.thongTinPhim;
+          this.loading=true;
           },
           complete: () => {
           },

@@ -16,10 +16,10 @@ export class FilmReviewComponent implements OnInit {
   public formComment: FormGroup;
   mangComment: any[];
   currentUser: any = {};
-  mangContent: any[] = []; // sử dụng ngfor và hiển thị giao diện
+  mangContent: any[] = []; 
   trangThai: boolean = false;
-  star: number = 0; // số sao đánh giá
-  url: any; // Ảnh avatar comment
+  star: number = 0; 
+  url: any; 
   count: number = 1; 
   constructor(
     public comment: CommentService,
@@ -34,7 +34,7 @@ export class FilmReviewComponent implements OnInit {
     this.formComment.markAllAsTouched();
     if (this.formComment.invalid || this.star == 0) {
       return;
-    } // Nếu chưa bình luận và đánh giá ==> không submit được
+    } 
     this.mangComment = [
       {
         binhLuan: value.binhLuan,
@@ -75,7 +75,7 @@ export class FilmReviewComponent implements OnInit {
     // button show
     this.count++;
     this.mangContent = this.mangComment.slice(0, 5 * this.count);
-    // Mỗi lần click mảng content sẽ +5 giá trị của mảng comment
+    
   }
   hideee() {
     // reset lại giá trị ban đầu của mảng content
