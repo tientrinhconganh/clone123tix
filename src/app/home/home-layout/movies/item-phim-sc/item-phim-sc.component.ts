@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { SharingDataService } from '../../../../core/share/sharing-data.service'
 
 @Component({
   selector: 'app-item-phim-sc',
@@ -7,9 +8,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ItemPhimScComponent implements OnInit {
   @Input() PhimSC;
-  constructor() { }
+  constructor(private sharing:SharingDataService) { }
 
   ngOnInit(): void {
   }
-
+  clickPlayButton(){
+    this.sharing.sharingTrailerMethod(this.PhimSC.trailer);
+  }
 }

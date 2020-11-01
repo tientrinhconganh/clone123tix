@@ -4,7 +4,15 @@
     padding-top: $pad-mar4;
     padding-bottom: $pad-mar4;
     color: #949494;
-  
+    @include for-size(sm){
+      .footer_top{
+        display: none;
+      }
+      .footer-bottom-left,.footer-bottom-right{
+        display: flex;
+        justify-content: center;
+      }
+    }
     p {
       margin-bottom: $pad-mar1;
     }
@@ -63,21 +71,5 @@
         text-align: right;
       }
   
-      .infoFooter {
-        white-space: nowrap;
-        font-size: 70%;
-        padding-left: 30px!important;
-  
-        span {
-          &:first-child {
-            color: white;
-          }
-          display: block;
-          line-height: 1.8;
-          color: #949494;
-          font-size: $font-size1;
-          font-weight: 400;
-        }
-      }
     }
   }

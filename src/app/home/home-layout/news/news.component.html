@@ -1,12 +1,12 @@
 <div class="container my-5" id="tintuc">
-    <div class="tabs-area d-flex justify-content-between mx-auto">
-        <div class="tab-area" [ngClass]="{'active': isActivated === 'dienAnh'}" (click)="changeTab('dienAnh')">
+    <div class="tabs-area d-flex justify-content-between tintucTitle">
+        <div class="tab-area px-1" [ngClass]="{'active': isActivated === 'dienAnh'}" (click)="changeTab('dienAnh')">
             Điện Ảnh
         </div>
-        <div class="tab-area" [ngClass]="{'active': isActivated === 'review'}" (click)="changeTab('review')">
+        <div class="tab-area px-1" [ngClass]="{'active': isActivated === 'review'}" (click)="changeTab('review')">
             Review
         </div>
-        <div class="tab-area" [ngClass]="{'active': isActivated === 'khuyenMai'}" (click)="changeTab('khuyenMai')">
+        <div class="tab-area px-1" [ngClass]="{'active': isActivated === 'khuyenMai'}" (click)="changeTab('khuyenMai')">
             Khuyến mãi
         </div>
     </div>

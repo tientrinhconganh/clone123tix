@@ -9,7 +9,7 @@
 #dat-ve {
 
   @include for-size(ll) {
-    margin-top: 76px;
+    padding-top: 30px;
     height: 730px;
   }
   @include for-size(lg) {

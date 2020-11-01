@@ -1,6 +1,7 @@
 @import "main";
 #tintuc {
     .tabs-area {
+       margin: 0 auto;
         padding-bottom: $pad-mar4;
         width: 35%;
         font-size: $font-size5;
@@ -33,4 +34,12 @@
           }
         }
     }
+    @include for-size(sm){
+      .tabs-area{
+        margin: 0;
+        padding: 0;
+      }
+
+    }
+
 }

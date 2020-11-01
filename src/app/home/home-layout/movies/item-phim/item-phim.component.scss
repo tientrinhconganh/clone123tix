@@ -54,11 +54,13 @@
         outline: none;
         opacity: 1;
         transition: opacity 0.3s;
+        display: none;
         img{         
             height: 20%;
-        }
-        &:hover {
-            opacity: 0.8;
-        }
+        }       
+    }
+    &:hover .playTrailer{
+        opacity: 0.8;
+        display: block;
     }
 }

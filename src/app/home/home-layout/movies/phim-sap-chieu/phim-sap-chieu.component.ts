@@ -9,14 +9,14 @@ export class PhimSapChieuComponent implements OnInit {
   // slideConfig = {dots: false};
 
   DanhSachPhimSapChieu=[
-    {tenPhim:"Sóng Thần Ở Haeundae",hinhAnh:'../../../../../assets/img/phimsc1.png',thoigian:"120 phút"},
-    {tenPhim:"Tay Đấm Mỹ",hinhAnh:'../../../../../assets/img/phimsc2.png',thoigian:"98 phút"},
-    {tenPhim:"Sài Gòn Trong Cơn Mưa",hinhAnh:'../../../../../assets/img/phimsc3.png',thoigian:"105 phút"},
-    {tenPhim:"Chồng Người Ta",hinhAnh:'../../../../../assets/img/phimsc4.png',thoigian:"90 phút"},
-    {tenPhim:"The Hitman's Wife's Bodyguard",hinhAnh:'../../../../../assets/img/phimsc5.png',thoigian:"100 phút"},
-    {tenPhim:"Những Cô Vợ Hành Động",hinhAnh:'../../../../../assets/img/phimsc6.png',thoigian:"100 phút"},
-    {tenPhim:"Monster Hunter",hinhAnh:'../../../../../assets/img/phimsc7.jpg',thoigian:"120 phút"},
-    {tenPhim:"Vùng Đất Câm Lặng 2",hinhAnh:'../../../../../assets/img/phimsc8.jpg',thoigian:"120 phút"},  
+    {tenPhim:"Sóng Thần Ở Haeundae",hinhAnh:'../../../../../assets/img/phimsc1.png',thoigian:"120 phút",trailer:"https://www.youtube.com/watch?v=FwtK6FG_Hvg"},
+    {tenPhim:"Tay Đấm Mỹ",hinhAnh:'../../../../../assets/img/phimsc2.png',thoigian:"98 phút",trailer:"https://www.youtube.com/watch?v=MhZTidPe544"},
+    {tenPhim:"Sài Gòn Trong Cơn Mưa",hinhAnh:'../../../../../assets/img/phimsc3.png',thoigian:"105 phút",trailer:"https://www.youtube.com/watch?v=Eyju5ODfd-g"},
+    {tenPhim:"Chồng Người Ta",hinhAnh:'../../../../../assets/img/phimsc4.png',thoigian:"90 phút",trailer:"https://www.youtube.com/watch?v=px4HvaCwHug"},
+    {tenPhim:"The Hitman's Wife's Bodyguard",hinhAnh:'../../../../../assets/img/phimsc5.png',thoigian:"100 phút",trailer:"https://www.youtube.com/watch?v=LbF9E3XIKB8"},
+    {tenPhim:"Những Cô Vợ Hành Động",hinhAnh:'../../../../../assets/img/phimsc6.png',thoigian:"100 phút",trailer:"https://www.youtube.com/watch?v=ChORPr7sqZ8"},
+    {tenPhim:"Monster Hunter",hinhAnh:'../../../../../assets/img/phimsc7.jpg',thoigian:"120 phút",trailer:"https://www.youtube.com/watch?v=3od-kQMTZ9M"},
+    {tenPhim:"Vùng Đất Câm Lặng 2",hinhAnh:'../../../../../assets/img/phimsc8.jpg',thoigian:"120 phút",trailer:"https://www.youtube.com/watch?v=eytKQW5kA3Y"},  
   ]
 
   slideConfig = {
