@@ -63,13 +63,13 @@
                                 <p>{{combo.gia}}</p>
                             </div>
                             <div class="combo-sl col-4 d-flex mx-auto">
-                                <div (click)="datCombo(combo.id,false)" class="minus text-center">
+                                <button (click)="datCombo(combo.id,false)" class="minus text-center">
                                     -
-                                </div>
+                                </button>
                                 <span class="soLuong text-center align-self-center">{{combo.soLuong}}</span>
-                                <div (click)="datCombo(combo.id,true)" class="plus text-center">
+                                <button (click)="datCombo(combo.id,true)" class="plus text-center">
                                     +
-                                </div>
+                                </button>
                             </div>
                         </div>
                         <div class="combo-line"></div>
