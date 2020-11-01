@@ -23,7 +23,7 @@
                     <a (click)="changeDieuKien('lichChieu')" class="btn  my-2 btn-danger" pageScroll href="#lichChieu"
                         [pageScrollDuration]="300"><span>Mua Vé</span></a>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 mt-5">
                     <div class="header-circleStar ml-auto">
                         <div class="circlePercent text-center">
                             <circle-progress [percent]="chiTietPhim.danhGia*10" [radius]="70" [outerStrokeWidth]="12"
@@ -32,7 +32,7 @@
                                 [backgroundPadding]="-20" [toFixed]="1" [animationDuration]="1000">
                             </circle-progress>
 
-                            <span class="circle-danhGia">{{chiTietPhim.danhGia/2}}</span>
+                            <span class="circle-danhGia">{{chiTietPhim.danhGia}}</span>
                         </div>
                         <div class="circleStar-star">
                             <app-danh-gia [danhGia]=chiTietPhim.danhGia [phimItem]="3"></app-danh-gia>

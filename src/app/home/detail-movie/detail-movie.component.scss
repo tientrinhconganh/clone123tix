@@ -8,61 +8,7 @@
   z-index: 1;
 }
 
-.detail-footer {
-  padding: $pad-mar8 0;
-  max-width: $width-ll;
-  @include for-size(lg) {
-    max-width: $width-lg;
-  }
-  @include for-size(md) {
-    max-width: 100%;
-  }
-  @include for-size(sm) {
-    padding: $pad-mar2;
-  }
-  .detai-footer-title {
-    padding: 0 $pad-mar8;
-    h3 {
-      color: rgba(0, 0, 0, 0.6);
-      padding: 0 $pad-mar5;
-      transition: all 0.5s;
-      font-size: $font-size4;
-      font-weight: 400;
-      &:hover {
-        color: $color-headingA;
-        font-size: $font-size5;
-        @include for-size(xs) {
-          font-size: $font-size3;
-        }
-      }
-      @include for-size(xs) {
-        font-size: 15px;
-        padding: 0 $pad-mar4;
-      }
-    }
-    h3.active {
-      font-weight: 550;
-      color: $color-headingA;
-      font-size: $font-size5;
-      pointer-events: none;
-      @include for-size(xs) {
-        font-size: $font-size3;
-      }
-      @include for-size(iphone) {
-        font-size: $font-size3;
-      }
-    }
-    @include for-size(sm) {
-      padding: $pad-mar4 $pad-mar4;
-    }
-    @include for-size(xs) {
-      padding: $pad-mar4 $pad-mar4;
-    }
-    @include for-size(phone-sm) {
-      padding: $pad-mar4 0;
-    }
-  }
-}
+
 
 .detail_movie {
   background-image: url("../../../assets/img/bg-city.jpg");
@@ -115,7 +61,7 @@
     color: white;
     .circle-danhGia {
       position: absolute;
-      top: 45%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
@@ -176,5 +122,61 @@
 }
 
 .footer_detail {
-  background-image: url("../../../assets/img/bg-sky1.jpg");
+  background-color: rgb(10, 32, 41);
+  .detail-footer {
+    padding: $pad-mar8 0;
+    max-width: $width-ll;
+    @include for-size(lg) {
+      max-width: $width-lg;
+    }
+    @include for-size(md) {
+      max-width: 100%;
+    }
+    @include for-size(sm) {
+      padding: $pad-mar2;
+    }
+    .detai-footer-title {
+      padding: 0 $pad-mar8;
+      h3 {
+        color: #fff;
+        padding: 0 $pad-mar5;
+        transition: all 0.5s;
+        font-size: $font-size4;
+        font-weight: 400;
+        cursor: pointer;
+        &:hover {
+          color: $color-headingA;
+          font-size: $font-size5;
+          @include for-size(xs) {
+            font-size: $font-size3;
+          }
+        }
+        @include for-size(xs) {
+          font-size: 15px;
+          padding: 0 $pad-mar4;
+        }
+      }
+      h3.active {
+        font-weight: 550;
+        color: $color-headingA;
+        font-size: $font-size5;
+        pointer-events: none;
+        @include for-size(xs) {
+          font-size: $font-size3;
+        }
+        @include for-size(iphone) {
+          font-size: $font-size3;
+        }
+      }
+      @include for-size(sm) {
+        padding: $pad-mar4 $pad-mar4;
+      }
+      @include for-size(xs) {
+        padding: $pad-mar4 $pad-mar4;
+      }
+      @include for-size(phone-sm) {
+        padding: $pad-mar4 0;
+      }
+    }
+  }
 }
