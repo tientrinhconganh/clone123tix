@@ -17,7 +17,16 @@
         }
     }
 } 
-
+iframe{
+    width: 1000px;
+height: 585px;
+}
+// @include for-size(ll){
+//     iframe{
+//         width: 1900px;
+// height: 1500px;
+//     }
+// }
 @include for-size(lg){
     iframe{
         width: 853px;

@@ -1,7 +1,7 @@
 <div class="signin--vertical" [ngClass]='{"show":isLogin,"hide":!isLogin}'>
     <div class="container signin-modal">
         <div class="row">
-            <div class="mx-auto col-sm-10">
+            <div class="mx-auto col-10">
                 <img src="https://tix.vn/app/assets/img/icons/web-logo.png" alt="" routerLink="/" class="img">
                 <h2 class="text-center">Sign In</h2>
                 <form [formGroup]="signinForm" (ngSubmit)="dangNhap()" >
