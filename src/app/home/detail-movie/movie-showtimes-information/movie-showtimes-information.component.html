@@ -43,7 +43,7 @@
                                 <div (click)="changeTime(ngayChieuItem);changeNgayActive(index)"
                                     *ngFor="let ngayChieuItem of ngayChieu; let index = index" class="ngay-xem-item "
                                     [ngClass]='{"active": index === ngayActive}' @fadeIn>
-                                    <p>{{(ngayChieuItem | date :'1').split('-')[0]}}</p>
+                                    <p>{{(ngayChieuItem | date :'EEEE').split('-')[0]}}</p>
                                     <p>{{(ngayChieuItem | date :'1').split('-')[1]}}</p>
                                 </div>
 
@@ -69,7 +69,7 @@
                                             (click)="datVe(gioItem.maLichChieu)"
                                             [ngClass]='{"suatChieu-dark":isTheme}' class="suatChieu__content"
                                             *ngFor="let gioItem of gioChieu">
-                                            <span> {{gioItem.ngayChieuGioChieu  }} </span>
+                                            <span> {{gioItem.ngayChieuGioChieu | date:'shortTime' }} </span>
                                         </p>
                                         <div data-backdrop="static" data-keyboard="false" class="modal fade"
                                             id="warning-dangNhap" tabindex="-1" role="dialog"
